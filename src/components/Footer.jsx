@@ -1,10 +1,10 @@
 export default function Footer() {
     return (
         <footer className="flex items-center h-96">
-            <div className="mx-4 max-w-1/2 mx-auto sm:w-full sm:px-4 sm:text-center">
+            <div className="mx-4 max-w-1/2 mx-auto sm:w-full sm:px-4 text-center">
                 <h2 className="my-4 text-xl sm:text-3xl"><a href="mailto:champdecay@gmail.com">dhruvangg@gmail.com</a></h2>
                 <p>Always down to collaborate when I get time. Let's get in touch ✌️.</p>
-                <ul className="flex items-center my-4 sm:justify-center">
+                <ul className="flex items-center my-4 justify-center">
                     <li><a href="https://stackoverflow.com/users/7738692/dhruvang-gajjar" className="p-2 block mr-4"><svg className="fill-blue-900" width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="#000" viewBox="0 0 384 512" stroke="#000">
                         <path d="M290.7 311L95 269.7 86.8 309l195.7 41zm51-87L188.2 95.7l-25.5 30.8 153.5 128.3zm-31.2 39.7L129.2 179l-16.7 36.5L293.7 300zM262 32l-32 24 119.3 160.3 32-24zm20.5 328h-200v39.7h200zm39.7 80H42.7V320h-40v160h359.5V320h-40z"></path>
                     </svg></a></li>
