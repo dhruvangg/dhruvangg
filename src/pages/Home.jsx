@@ -1,7 +1,7 @@
 import separator from '../assets/separator.png';
 export default function Home() {
     return (
-        <section className='max-w-3xl mx-auto px-4 mt-12 prose prose-xl'>
+        <section className='max-w-3xl mx-auto px-4 mt-12 prose prose-xl dark:prose-invert'>
             <h1>Hello, I'm Dhruvang Gajjar</h1>
             <h4>A JavaScript Developer and Mentor.</h4>
 
