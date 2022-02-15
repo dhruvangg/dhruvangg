@@ -2,6 +2,7 @@ import { gql, useQuery } from '@apollo/client';
 import { Link } from 'react-router-dom';
 import DateFormat from '../helper/Articles/DateFormat';
 import Skeleton from '../helper/Articles/Skeleton';
+import Head from '../helper/Head';
 
 export default function Articles() {
     const GET_POSTS = gql`query {
@@ -15,6 +16,7 @@ export default function Articles() {
 
     return (
         <section>
+            <Head data={{ title: 'Articles | Dhruvang', description: 'Articles modern web technologies by Dhruvang Gajjar', keywords: 'JavaScript, React, Web Development', image: '' }} />
             <div className='prose prose-xl mx-auto dark:prose-invert'>
                 {data && data.posts.map((item, i) => {
                     const { name, tags, featured_image, excerpt, createdAt, slug } = item;

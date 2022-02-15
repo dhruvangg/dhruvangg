@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import ReactMarkdown from 'react-markdown'
 import DateFormat from '../helper/Articles/DateFormat';
 import Skeleton from '../helper/Articles/Skeleton';
+import Head from '../helper/Head';
 
 export default function Article() {
     const { slug } = useParams();
@@ -34,6 +35,7 @@ export default function Article() {
 
     return (
         <section>
+            <Head data={{ title: `${data.post.name} | Dhruvang`, description: data.post.excerpt, keywords: data.post.tags.join(" "), image: '' }} />
             <div className='prose prose-xl mx-auto my-12 dark:prose-invert'>
                 <p className="font-bold mb-2 text-sm"><span className="uppercase">{data.post.tags.map(el => `${el} `)}</span> | <DateFormat>{data.post.createdAt}</DateFormat></p>
                 <h1>{data.post.name}</h1>
